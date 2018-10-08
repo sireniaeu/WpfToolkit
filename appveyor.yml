@@ -38,7 +38,7 @@ artifacts:
     name: DotNetProjects.WPF.Themes.dll
   - path: WpfToolkit\WPF.Themes\bin\Release\DotNetProjects.WPF.Themes.pdb
     name: DotNetProjects.WPF.Themes.pdb
-  - path: '**\DotNetProjects.*.nupkg'
+  - path: '**\Sirenia.*.nupkg'
 
 #uncomment to publish to NuGet
 deploy:

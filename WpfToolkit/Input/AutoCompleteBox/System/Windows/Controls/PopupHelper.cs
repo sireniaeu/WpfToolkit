@@ -143,11 +143,6 @@ namespace System.Windows.Controls
             double rootHeight = hostContent.ActualHeight;
 #else
             UIElement u = Parent;
-            if (Application.Current.Windows.Count > 0)
-            {
-                // TODO: USE THE CURRENT WINDOW INSTEAD! WALK THE TREE!
-                u = Application.Current.Windows[0];
-            }
             while ((u as Window) == null && u != null)
             {
                 u = VisualTreeHelper.GetParent(u) as UIElement;

@@ -1725,7 +1725,7 @@ namespace System.Windows.Controls
                     TextBox.Select(TextBox.Text.Length, 0);
                 }
             }
-            //Interaction.UpdateVisualStateBase(false);
+            Interaction.UpdateVisualStateBase(false);
         }
 
         /// <summary>

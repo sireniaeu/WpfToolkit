@@ -1709,7 +1709,7 @@ namespace System.Windows.Controls
             // if you currently have the focus you need to do consult the 
             // FocusManager (see HasFocus()).
 
-            if (hasFocus)
+            if (HasFocus())
             {
                 if (TextBox != null && TextBox.SelectionLength == 0)
                 {
@@ -1725,6 +1725,7 @@ namespace System.Windows.Controls
                     TextBox.Select(TextBox.Text.Length, 0);
                 }
             }
+            //Interaction.UpdateVisualStateBase(false);
         }
 
         /// <summary>
